@@ -5,10 +5,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <script defer src="./resources/fonts/fontawesome-all.js"></script>
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./resources/css/footer.css">
-    <link href='https://fonts.googleapis.com/css?family=Shadows Into Light Two' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Special+Elite">
 
     <title>Bullfinch Books</title>
 
@@ -18,45 +20,58 @@ body, html {
   height: 100%;
 }
 
+
 .bg {
-    /* The image used */
-    background-image: url("./resources/background/background.jpeg");
 
-    /* Full height */
-    height: 100%;
+background-color: #707884;
 
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
-.midText {
-height: 100vh;
+.headerBack {
+
+
+height: 350px;
+
+  background-image: url("./resources/background/bullfinch.jpeg");
+  background-repeat: no-repeat;
+  background-position: top center;
+
+}
+
+
+.midDiv {
+
+padding: 50px;
+
 display:flex;
+justify-content: center;
+
+}
+
+
+.footerLogo {
+    font-family: "Special Elite";
+    font-size: 60px;
+}
+
+.topText {
+  font-family: "Special Elite";
+  font-size: 150px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+  color: white;
+}
+
+
+.headerMid {
+
+  height: 350px;
+display: flex;
+
 justify-content: center;
 align-items: center;
 
-}
-
-.title {
-  font-size: 70px;
-  opacity: .8;
-
-}
-
-
-.subText {
-font-size: 20px;
-display:flex;
-justify-content: space-around;
-align-items: center;
-opacity: .8;
-
-}
-
-.footerLogo {
-    font-family: 'Shadows Into Light Two';font-size: 60px;
 }
 
 
@@ -65,13 +80,19 @@ opacity: .8;
 
   </head>
 
-
-
-
-
-
   <body class="bg">
 
+
+<div class = "headerBack">
+
+<div class = "headerMid">
+<span class = "topText"> hello, reader </span>
+
+
+
+</div>
+
+</div>
 
 
 
@@ -88,36 +109,50 @@ opacity: .8;
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Blog</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="#">home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Media
+              about
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Podcasts</a>
-              <a class="dropdown-item" href="#">Events</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Coming Soon</a>
+              <a class="dropdown-item" href="#">bullfinch</a>
+              <a class="dropdown-item" href="#">team</a>
+              <a class="dropdown-item" href="#">contact us</a>
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="#">blog</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              media
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">podcast</a>
+              <a class="dropdown-item" href="#">calendar</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">upcoming</a>
+            </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled" href="#">Magazine</a>
+            <a class="nav-link" href="#">submissions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">magazine</a>
           </li>
         </ul>
+
+
+        <button id="searchGlass" class="search" onClick="searchFunc()"><i class="fas fa-search"></i></button>
+<div id="searchId" style="display:none">
         <form class="form-inline my-2 my-lg-0">
           <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </form>
+      </div>
+
+
       </div>
     </nav>
 
@@ -135,7 +170,7 @@ opacity: .8;
             </button>
           </div>
           <div class="modal-body">
-            Please subscribe to our mailing list!
+            Please subscribe to our mailing list.
 
               <form>
                   <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
@@ -145,7 +180,7 @@ opacity: .8;
           </div>
 
           <div class="modal-footer">
-            <button type="button" class="btn btn-primary">Subscribe!</button>
+            <button type="button" class="btn btn-primary">Subscribe</button>
             <button type="button" class="btn btn-secondary" data-dismiss="modal">No, thanks</button>
 
           </div>
@@ -153,37 +188,61 @@ opacity: .8;
       </div>
     </div>
 
-
-
-
-<div class ="midText">
-
-<div>
-<div class = "title" style="background-color: #7e94b7">   <span > Welcome to Bullfinch Books! </span> </div>
-<br>
-<div class = "subText"> <span style="background-color: #7e94b7">coming soon. . .</span> <span>  </span> </div>
-
-</div>
+<div style="height:40px">
 </div>
 
+<div class = "midDiv">
+
+    <div class="card-deck">
+
+      <div class="card border-info mb-3">
+        <img class="card-img-top" src="./resources/images/map.png" alt="Springfield">
+        <div class="card-body">
+          <h5 class="card-title">Springfield</h5>
+          <p class="card-text">The debut book from Wynter K. Miller: a novel loosely based on the life and times of her mother </p>
+          <p class="card-text"><small class="text-muted">click here to buy a copy</small></p>
+        </div>
+      </div>
+
+      <div class="card border-info mb-3">
+        <div style = "padding-left:50px; padding-right:50px; padding-top:20px"> <img class="card-img-top" src="./resources/images/brain.png" alt="Grey Matters"> </div>
+        <div class="card-body">
+          <h5 class="card-title">Grey Matters</h5>
+          <p class="card-text">Our new podcast, where we discuss everything from guns to feminism to sandwiches</p>
+          <p class="card-text"><small class="text-muted">latest episode: "the philosophy of baseball" with Mike</small></p>
+        </div>
+      </div>
+
+      
+      <div class="card border-info mb-3">
+        <img class="card-img-top" src="./resources/images/speech.png" alt="TellTale">
+        <div class="card-body">
+          <h5 class="card-title">TellTale</h5>
+          <p class="card-text">The latest issue of TellTale, our literary magazine for definitely normal people, is on shelves now</p>
+          <p class="card-text"><small class="text-muted">find it in a totally normal store near you</small></p>
+        </div>
+      </div>
+    </div>
+
+</div>
 
 <footer class="footer-distributed">
 
   <div class="footer-left">
 
-    <h3 class="footerLogo">Bullfinch</h3>
+    <h3 class="footerLogo">bullfinch</h3>
 
     <p class="footer-links">
 
-      <a href="#">About</a>
+      <a href="#">about</a>
       ·
-      <a href="#">Products</a>
+      <a href="#">blog</a>
       ·
-      <a href="#">Blog</a>
+      <a href="#">media</a>
       ·
-      <a href="#">Media</a>
+      <a href="#">submissions</a>
       ·
-      <a href="#">Contact</a>
+      <a href="#">magazine</a>
     </p>
 
     <p class="footer-company-name">Bullfinch Books &copy; 2016</p>
@@ -212,8 +271,8 @@ opacity: .8;
 
     <p class="footer-company-about">
       <span>About Us</span>
-      Hello!  We are Bullfinch Books. We publish things we think are great, and also some things we write.
-      Please check back soon for more information!
+      Hello.  We are Bullfinch Books. We publish things we think are great, and also some things we write.
+      Please check back soon for more information. Period.
     </p>
 
     <div class="footer-icons">
@@ -241,6 +300,19 @@ opacity: .8;
         $(window).on('load',function(){
             $('#subscribeBox').modal('show');
         });
+    </script>
+
+    <script>
+
+    function searchFunc() {
+        var x = document.getElementById("searchId");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+
     </script>
 
 
