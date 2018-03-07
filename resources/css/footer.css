@@ -4,7 +4,7 @@
 	box-sizing: border-box;
 	width: 100%;
 	text-align: left;
-	font: bold 16px sans-serif;
+	font: 16px sans-serif;
 
 	padding: 55px 50px;
 	margin-top: 80px;
@@ -149,7 +149,7 @@
 @media (max-width: 880px) {
 
 	.footer-distributed{
-		font: bold 14px sans-serif;
+		font: 14px sans-serif;
 	}
 
 	.footer-distributed .footer-left,
