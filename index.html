@@ -10,7 +10,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./resources/css/footer.css">
-    <link href='https://fonts.googleapis.com/css?family=Nothing You Could Do' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Karma' rel='stylesheet'>
 
 
 
@@ -59,7 +59,7 @@ justify-content: center;
 
 
 .footerLogo {
-    font-family: "Nothing You Could Do";
+    font-family: "Karma";
     font-size: 60px;
 }
 
@@ -83,6 +83,11 @@ align-items: center;
 
 }
 
+.dropdown-item.active, .dropdown-item:active {
+    color: #fff;
+    text-decoration: none;
+    background-color: #000000 !important;
+  }
 
 </style>
 
@@ -95,16 +100,13 @@ align-items: center;
 <div class = "headerBack">
 
 <div class = "headerMid">
-<span class = "topText"> hello, reader </span>
+<span class = "topText"> </span>
 
 
 
 </div>
 
 </div>
-
-
-
 
 
 
@@ -153,13 +155,14 @@ align-items: center;
         </ul>
 
 
-        <button id="searchGlass" class="search" onClick="searchFunc()"><i class="fas fa-search"></i></button>
+
 <div id="searchId" style="display:none">
         <form class="form-inline my-2 my-lg-0">
           <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          <!-- <button id="searchGlass" class="search"><i class="fas fa-search"></i></button>  -->
         </form>
       </div>
+      <button id="searchGlass" class="search" onClick="searchFunc()"><i class="fas fa-search"></i></button>
 
 
       </div>
@@ -168,7 +171,7 @@ align-items: center;
 
 
 
-    <!-- Modal -->
+    <!-- SUBSCRIPTION POPUP
     <div id="subscribeBox" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
@@ -196,6 +199,9 @@ align-items: center;
         </div>
       </div>
     </div>
+
+-->
+
 
 <div style="height:40px">
 </div>
@@ -254,7 +260,7 @@ align-items: center;
       <a href="#">magazine</a>
     </p>
 
-    <p class="footer-company-name">Bullfinch Books &copy; 2016</p>
+    <p class="footer-company-name">bullfinch books &copy; 2016</p>
   </div>
 
   <div class="footer-center">
@@ -280,7 +286,7 @@ align-items: center;
 
     <p class="footer-company-about">
       <span>About Us</span>
-      Hello.  We are Bullfinch Books. We publish things we think are great, and also some things we write.
+      Hello.  We are bullfinch books. We publish things we think are great, and also some things we write.
       Please check back soon for more information. Period.
     </p>
 
