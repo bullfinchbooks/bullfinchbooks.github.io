@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <script defer src="./resources/fonts/fontawesome-all.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./resources/css/footer.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Karma' rel='stylesheet'>
+
+<link href='https://fonts.googleapis.com/css?family=Shadows Into Light Two' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Caveat' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Covered By Your Grace' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Loved by the King' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Waiting for the Sunrise' rel='stylesheet'>
+
+    <title>Bullfinch Books</title>
+
+<style>
+
+@font-face {
+   font-family: tox;
+   src: url("./resources/fonts/tox.ttf");
+}
+
+
+body, html {
+  height: 100%;
+  font-family: "Karma";
+}
+
+
+.bg {
+
+background-color: #707884;
+background-color: #474747;
+
+}
+
+
+.navbar {
+    font-family: "Karma";
+}
+
+.headerBack {
+
+
+max-height: 300px;
+width: 100%;
+
+
+/*
+height: 350px;
+
+background-image: url("./resources/background/banner.png");
+height: 300px;
+width:auto;
+
+background-repeat: no-repeat;
+  background-position: top center;*/
+
+}
+
+
+
+
+.midDiv {
+
+padding: 50px;
+
+display:flex;
+justify-content: center;
+
+}
+
+
+.footerLogo {
+    font-family: "Waiting for the Sunrise";
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.nav-logo {
+  font-family: "Waiting for the Sunrise";
+  font-weight: bold;
+  font-size: 30px;
+}
+
+/*
+.topText {
+  font-family: "tox";
+  font-size: 180px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+  color: white;
+}
+*/
+
+
+
+
+.footer-distributed {
+  background-color: white !important;
+  color: black !important;
+  font-family: "karma" !important;
+}
+
+.footerLogo {
+  color: black !important;
+}
+
+.footer-links {
+  color:black !important;
+}
+
+.footer-center {
+  color:black !important;
+}
+
+.aboutText {
+  color: black !important;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+    color: #fff;
+    text-decoration: none;
+    background-color: #000000 !important;
+  }
+
+</style>
+
+
+  </head>
+
+  <body class="bg">
+
+
+<div class = "headerBack">
+
+  <img class="headerBack" src="./resources/background/light.png" />
+
+</div>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand nav-logo" href="#">bullfinch</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              about
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">bullfinch</a>
+              <a class="dropdown-item" href="#">team</a>
+              <a class="dropdown-item" href="#">contact us</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">blog</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              media
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">podcast</a>
+              <a class="dropdown-item" href="#">calendar</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">upcoming</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">submissions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">magazine</a>
+          </li>
+        </ul>
+
+
+
+<div id="searchId" style="display:none">
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="search" aria-label="Search">
+          <!-- <button id="searchGlass" class="search"><i class="fas fa-search"></i></button>  -->
+        </form>
+      </div>
+      <button id="searchGlass" class="search" onClick="searchFunc()"><i class="fas fa-search"></i></button>
+
+
+      </div>
+    </nav>
+
+
+
+
+    <!-- SUBSCRIPTION POPUP
+    <div id="subscribeBox" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Want Updates?</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Please subscribe to our mailing list.
+
+              <form>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              </form>
+
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Subscribe</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">No, thanks</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+-->
+
+
+<div style="height:40px">
+</div>
+
+<div class = "midDiv">
+
+    <div class="card-deck">
+
+      <div class="card mb-3">
+        <img class="card-img-top" src="./resources/images/map.png" alt="Springfield">
+        <div class="card-body">
+          <h5 class="card-title">Springfield</h5>
+          <p class="card-text">The debut book from Wynter K. Miller: a novel loosely based on the life and times of her mother </p>
+          <p class="card-text"><small class="text-muted">click here to buy a copy</small></p>
+        </div>
+      </div>
+
+
+      <div class="card mb-3">
+        <img class="card-img-top" src="./resources/images/speech.png" alt="TellTale">
+        <div class="card-body">
+          <h5 class="card-title">Book Reviews</h5>
+          <p class="card-text">Need something new to read? TBR list getting scarily short? Browse our reviews and find your new obsession!</p>
+          <p class="card-text"><small class="text-muted">Last Review: The Interestings</small></p>
+        </div>
+      </div>
+
+
+      <div class="card mb-3">
+        <div style = "padding-left:50px; padding-right:50px; padding-top:20px"> <img class="card-img-top" src="./resources/images/bird.png" alt="Grey Matters"> </div>
+        <div class="card-body">
+          <h5 class="card-title">Birdwalks</h5>
+          <p class="card-text">Our new podcast, where we discuss everything from guns to feminism to sandwiches. And books, of course. Sometimes.</p>
+          <p class="card-text"><small class="text-muted">Latest episode: "the philosophy of baseball" with Mike</small></p>
+        </div>
+      </div>
+
+    </div>
+
+</div>
+
+<footer class="footer-distributed">
+
+  <div class="footer-left">
+
+    <h3 class="footerLogo">bullfinch</h3>
+
+    <p class="footer-links">
+
+      <a href="#">about</a>
+      ·
+      <a href="#">blog</a>
+      ·
+      <a href="#">media</a>
+      ·
+      <a href="#">submissions</a>
+      ·
+      <a href="#">magazine</a>
+    </p>
+
+    <p class="footer-company-name">bullfinch books &copy; 2018</p>
+  </div>
+
+  <div class="footer-center">
+
+    <div>
+      <i class="fa fa-map-marker"></i> &nbsp;
+      <p class="aboutText"><span class="aboutText"> SF | DC</span> ca | dc</p>
+    </div>
+<br>
+    <div>
+      <i class="fa fa-phone"></i>
+      <p class="aboutText"> (530) 429-2665</p>
+    </div>
+<br>
+    <div>
+      <i class="fa fa-envelope"></i>
+      <p class="aboutText"><a href="mailto:contact@bullfinchbooks.com" class="aboutText">contact@bullfinchbooks.com</a></p>
+    </div>
+
+  </div>
+
+  <div class="footer-right">
+
+    <p class="footer-company-about">
+      <span class = "aboutText">About Us</span>
+      Hello.  We are bullfinch books. We publish things we think are great, and also some things we write.
+      Please check back soon for more information. Period.
+    </p>
+
+    <div class="footer-icons">
+
+      <a href="#"><i class="fa fa-facebook"></i></a>
+      <a href="#"><i class="fa fa-twitter"></i></a>
+      <a href="#"><i class="fa fa-linkedin"></i></a>
+      <a href="#"><i class="fa fa-github"></i></a>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(window).on('load',function(){
+            $('#subscribeBox').modal('show');
+        });
+    </script>
+
+    <script>
+
+    function searchFunc() {
+        var x = document.getElementById("searchId");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+
+    </script>
+
+
+  </body>
+</html>

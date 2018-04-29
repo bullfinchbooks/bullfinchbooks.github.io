@@ -1,373 +1,877 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
+<!DOCTYPE html>
+<!--[if lt IE 9 ]><html class="no-js oldie" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>bullfinch</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-    <script defer src="./resources/fonts/fontawesome-all.js"></script>
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="./resources/css/footer.css">
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
 
-    <link href='https://fonts.googleapis.com/css?family=Karma' rel='stylesheet'>
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
 
-<link href='https://fonts.googleapis.com/css?family=Shadows Into Light Two' rel='stylesheet'>
-<link href='https://fonts.googleapis.com/css?family=Caveat' rel='stylesheet'>
-<link href='https://fonts.googleapis.com/css?family=Covered By Your Grace' rel='stylesheet'>
-<link href='https://fonts.googleapis.com/css?family=Loved by the King' rel='stylesheet'>
-<link href='https://fonts.googleapis.com/css?family=Waiting for the Sunrise' rel='stylesheet'>
+    <!-- favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-    <title>Bullfinch Books</title>
+</head>
 
-<style>
+<body id="top">
 
-@font-face {
-   font-family: tox;
-   src: url("./resources/fonts/tox.ttf");
-}
+    <!-- header
+    ================================================== -->
+    <header class="s-header">
 
-
-body, html {
-  height: 100%;
-  font-family: "Karma";
-}
-
-
-.bg {
-
-background-color: #707884;
-background-color: #474747;
-
-}
-
-
-.navbar {
-    font-family: "Karma";
-}
-
-.headerBack {
-
-
-max-height: 300px;
-width: 100%;
-
-
-/*
-height: 350px;
-
-background-image: url("./resources/background/banner.png");
-height: 300px;
-width:auto;
-
-background-repeat: no-repeat;
-  background-position: top center;*/
-
-}
-
-
-
-
-.midDiv {
-
-padding: 50px;
-
-display:flex;
-justify-content: center;
-
-}
-
-
-.footerLogo {
-    font-family: "Waiting for the Sunrise";
-    font-weight: bold;
-    font-size: 60px;
-}
-
-.nav-logo {
-  font-family: "Waiting for the Sunrise";
-  font-weight: bold;
-  font-size: 30px;
-}
-
-/*
-.topText {
-  font-family: "tox";
-  font-size: 180px;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 500;
-  color: white;
-}
-*/
-
-
-
-
-.footer-distributed {
-  background-color: white !important;
-  color: black !important;
-  font-family: "karma" !important;
-}
-
-.footerLogo {
-  color: black !important;
-}
-
-.footer-links {
-  color:black !important;
-}
-
-.footer-center {
-  color:black !important;
-}
-
-.aboutText {
-  color: black !important;
-}
-
-.dropdown-item.active, .dropdown-item:active {
-    color: #fff;
-    text-decoration: none;
-    background-color: #000000 !important;
-  }
-
-</style>
-
-
-  </head>
-
-  <body class="bg">
-
-
-<div class = "headerBack">
-
-  <img class="headerBack" src="./resources/background/light.png" />
-
-</div>
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand nav-logo" href="#">bullfinch</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              about
+        <div class="header-logo">
+            <a class="site-logo" href="index.html">
+                <img src="./resources/books/logo.png" alt="Homepage">
             </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">bullfinch</a>
-              <a class="dropdown-item" href="#">team</a>
-              <a class="dropdown-item" href="#">contact us</a>
+        </div>
+
+        <nav class="header-nav">
+
+            <a href="#0" class="header-nav__close" title="close"><span>Close</span></a>
+
+            <div class="header-nav__content">
+                <h3>Navigation</h3>
+
+                <ul class="header-nav__list">
+                    <li class="current"><a class="smoothscroll"  href="#home" title="home">Home</a></li>
+                    <li><a class="smoothscroll"  href="#about" title="about">About</a></li>
+                    <li><a class="smoothscroll"  href="#services" title="media">Media</a></li>
+                    <li><a class="smoothscroll"  href="#works" title="blog">Blog</a></li>
+                    <li><a class="smoothscroll"  href="#clients" title="submissions">Submissions</a></li>
+                    <li><a class="smoothscroll"  href="#clients" title="magazine">Magazine</a></li>
+                    <li><a class="smoothscroll"  href="#contact" title="contact">Contact</a></li>
+                </ul>
+
+                <p>Thanks for visting Bullfinch! <a href='#0'>Click Here</a> for information about whatever we make this link to later. </p>
+
+                <ul class="header-nav__social">
+                    <li>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-behance"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-dribbble"></i></a>
+                    </li>
+                </ul>
+
+            </div> <!-- end header-nav__content -->
+
+        </nav>  <!-- end header-nav -->
+
+        <a class="header-menu-toggle" href="#0">
+            <span class="header-menu-text">Menu</span>
+            <span class="header-menu-icon"></span>
+        </a>
+
+    </header> <!-- end s-header -->
+
+
+    <!-- home
+    ================================================== -->
+    <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="./resources/books/books.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+
+        <div class="overlay"></div>
+        <div class="shadow-overlay"></div>
+
+        <div class="home-content">
+
+            <div class="row home-content__main">
+
+                <h3>Hello,</h3>
+
+                <h1>
+                    We print books <br>
+                    that we like. <br>
+                </h1>
+
+                <div class="home-content__buttons">
+                    <a href="#contact" class="smoothscroll btn btn--stroke">
+                        Get in touch
+                    </a>
+                    <a href="#about" class="smoothscroll btn btn--stroke">
+                        More About Us
+                    </a>
+                </div>
+
             </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">blog</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              media
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">podcast</a>
-              <a class="dropdown-item" href="#">calendar</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">upcoming</a>
+
+            <div class="home-content__scroll">
+                <a href="#about" class="scroll-link smoothscroll">
+                    <span>more</span>
+                </a>
             </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">submissions</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">magazine</a>
-          </li>
+
+            <div class="home-content__line"></div>
+
+        </div> <!-- end home-content -->
+
+
+        <ul class="home-social">
+            <li>
+                <a href="#0"><i class="fa fa-facebook" aria-hidden="true"></i><span>Facebook</span></a>
+            </li>
+            <li>
+                <a href="#0"><i class="fa fa-twitter" aria-hidden="true"></i><span>Twiiter</span></a>
+            </li>
+            <li>
+                <a href="#0"><i class="fa fa-instagram" aria-hidden="true"></i><span>Instagram</span></a>
+            </li>
+            <li>
+                <a href="#0"><i class="fa fa-behance" aria-hidden="true"></i><span>Behance</span></a>
+            </li>
+            <li>
+                <a href="#0"><i class="fa fa-dribbble" aria-hidden="true"></i><span>Dribbble</span></a>
+            </li>
         </ul>
+        <!-- end home-social -->
+
+    </section> <!-- end s-home -->
 
 
+    <!-- about
+    ================================================== -->
+    <section id='about' class="s-about">
 
-<div id="searchId" style="display:none">
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="search" aria-label="Search">
-          <!-- <button id="searchGlass" class="search"><i class="fas fa-search"></i></button>  -->
-        </form>
-      </div>
-      <button id="searchGlass" class="search" onClick="searchFunc()"><i class="fas fa-search"></i></button>
+        <div class="row section-header has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <h3 class="subhead subhead--dark">Hello There</h3>
+                <h1 class="display-1 display-1--light">We are Bullfinch</h1>
+            </div>
+        </div> <!-- end section-header -->
 
+        <div class="row about-desc" data-aos="fade-up">
+            <div class="col-full">
+                <p>
+                giving a voice to the ordinary idiots like us
+                </p>
+            </div>
+        </div> <!-- end about-desc -->
 
-      </div>
-    </nav>
+        <div class="row" data-aos="fade-up">
 
+          We are a small publishing house in San Francisco, CA.  We appreciate all of the niche book publishers out there, but we've found that
+          all these purpose-driven books left us feeling a little alienated. We care about being politically correct, and giving a voice to the underdogs, and all that...
+          but we also care about great writing. Bullfinch is a place that won't turn anyone down because of their perspective or voice, but we also dont want to publish
+          people <i>just because</i> of their perspective. Our submissions process is 100% blind, and we'll publish any works that we love.
 
-
-
-    <!-- SUBSCRIPTION POPUP
-    <div id="subscribeBox" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLongTitle">Want Updates?</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            Please subscribe to our mailing list.
-
-              <form>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-              </form>
-
-          </div>
-
-          <div class="modal-footer">
-            <button type="button" class="btn btn-primary">Subscribe</button>
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">No, thanks</button>
-
-          </div>
         </div>
-      </div>
-    </div>
 
--->
+<!--
 
+        <div class="row about-stats stats block-1-4 block-m-1-2 block-mob-full" data-aos="fade-up">
 
-<div style="height:40px">
-</div>
+            <div class="col-block stats__col ">
+                <div class="stats__count">127</div>
+                <h5>Awards Received</h5>
+            </div>
+            <div class="col-block stats__col">
+                <div class="stats__count">1505</div>
+                <h5>Cups of Coffee</h5>
+            </div>
+            <div class="col-block stats__col">
+                <div class="stats__count">109</div>
+                <h5>Projects Completed</h5>
+            </div>
+            <div class="col-block stats__col">
+                <div class="stats__count">102</div>
+                <h5>Happy Clients</h5>
+            </div>
 
-<div class = "midDiv">
-
-    <div class="card-deck">
-
-      <div class="card mb-3">
-        <img class="card-img-top" src="./resources/images/map.png" alt="Springfield">
-        <div class="card-body">
-          <h5 class="card-title">Springfield</h5>
-          <p class="card-text">The debut book from Wynter K. Miller: a novel loosely based on the life and times of her mother </p>
-          <p class="card-text"><small class="text-muted">click here to buy a copy</small></p>
         </div>
-      </div>
+      -->
+         <!-- end about-stats -->
+
+        <div class="about__line"></div>
+
+    </section> <!-- end s-about -->
 
 
-      <div class="card mb-3">
-        <img class="card-img-top" src="./resources/images/speech.png" alt="TellTale">
-        <div class="card-body">
-          <h5 class="card-title">Book Reviews</h5>
-          <p class="card-text">Need something new to read? TBR list getting scarily short? Browse our reviews and find your new obsession!</p>
-          <p class="card-text"><small class="text-muted">Last Review: The Interestings</small></p>
+    <!-- services
+    ================================================== -->
+    <section id='services' class="s-services">
+
+        <div class="row section-header has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <h3 class="subhead">Media</h3>
+                <h1 class="display-2">We've got our feathers in all kinds of cool things</h1>
+            </div>
+        </div> <!-- end section-header -->
+
+        <div class="row services-list block-1-2 block-tab-full">
+
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon">
+                    <i class="fa fa-book" aria-hidden="true"></i>
+                </div>
+                <div class="service-text">
+                    <h3 class="h2">Books</h3>
+                    <p>
+                      We read every manuscript that comes our way, and publish some of them. Our goal is to
+                      print great, engaging works——no matter who wrote it, or why.
+
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon">
+                    <i class="fa fa-indent" aria-hidden="true"></i>
+                </div>
+                <div class="service-text">
+                    <h3 class="h2">Magazine</h3>
+                    <p>
+                      <i>finch</i> is our literary magazine. It's designed to give a voice to all <thead>
+                        totally normal people out there, who are rad but can get lost in all the politics.
+                      </thead>
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon">
+                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                </div>
+                <div class="service-text">
+                    <h3 class="h2">Editing</h3>
+                    <p>
+                      Not ready to publish?  Send your stuff in anyways!  We'll read it (just for fun), and
+                      can give you brief feedback. Or, if you're in SF, invite us out for tacos. We'll chat books with you.
+
+
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon">
+                    <i class="fa fa-rss" aria-hidden="true"></i>
+                </div>
+                <div class="service-text">
+                    <h3 class="h2">Blog</h3>
+                    <p>
+                      Our blog is somewhat intended to be about books, but it's really so we can
+                      keep writing and pretend we're doing work. It's a good blog, check it out!
+
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon">
+                    <i class="fa fa-microphone" aria-hidden="true"></i>
+                </div>
+                <div class="service-text">
+                    <h3 class="h2">Podcast</h3>
+                    <p>
+                      <i>birdwalks</i> is our podcast, where we talk about everything from
+                      books to guns to feminism to what cute thing Rumpus did today.
+
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon">
+                  <i class="fa fa-users" aria-hidden="true"></i></div>
+                <div class="service-text">
+                    <h3 class="h2">Reading Series</h3>
+                    <p>
+                      Book club! We alternate selections, so every other month will be a pretty terrible
+                      book.  But you have to read it, and we're not telling you which month is the bad one.
+                    </p>
+                </div>
+            </div>
+
+        </div> <!-- end services-list -->
+
+    </section> <!-- end s-services -->
+
+
+    <!-- works
+    ================================================== -->
+    <section id='works' class="s-works">
+
+        <div class="intro-wrap">
+
+            <div class="row section-header has-bottom-sep light-sep" data-aos="fade-up">
+                <div class="col-full">
+                    <h3 class="subhead">Recent Works</h3>
+                    <h1 class="display-2 display-2--light">By bullfinch authors and such</h1>
+                </div>
+            </div> <!-- end section-header -->
+
+        </div> <!-- end intro-wrap -->
+
+        <div class="row works-content">
+            <div class="col-full masonry-wrap">
+                <div class="masonry">
+
+                    <div class="masonry__brick" data-aos="fade-up">
+                        <div class="item-folio">
+
+                            <div class="item-folio__thumb">
+                                <a href="./resources/books/1.jpg" class="thumb-link" title="HP1" data-size="1050x700">
+                                    <img src="./resources/books/1.jpg"
+                                         srcset="./resources/books/1.jpg 1x, ./resources/books/1.jpg 2x" alt="">
+                                </a>
+                            </div>
+
+                            <div class="item-folio__text">
+                                <h3 class="item-folio__title">
+                                    J.K Rowling
+                                </h3>
+                                <p class="item-folio__cat">
+                                    Sourcerer's Stone
+                                </p>
+                            </div>
+
+                            <a href="#" class="item-folio__project-link" title="Project link">
+                                <i class="icon-link"></i>
+                            </a>
+
+                            <div class="item-folio__caption">
+                                <p>
+                                  Our latest book.  Do you like wziards and trolls?  And faces in weird places?  Buy this book!
+                                </p>
+                            </div>
+
+                        </div>
+                    </div> <!-- end masonry__brick -->
+
+                    <div class="masonry__brick" data-aos="fade-up">
+                        <div class="item-folio">
+
+                            <div class="item-folio__thumb">
+                                <a href="./resources/books/2.jpg" class="thumb-link" title="HP2" data-size="1050x700">
+                                    <img src="./resources/books/2.jpg"
+                                         srcset="./resources/books/2.jpg 1x, ./resources/books/2.jpg 2x" alt="">
+                                </a>
+                            </div>
+
+                            <div class="item-folio__text">
+                                <h3 class="item-folio__title">
+                                    Wynter M. Killer
+                                </h3>
+                                <p class="item-folio__cat">
+                                    Chamber of Secrets
+                                </p>
+                            </div>
+
+                            <a href="#" class="item-folio__project-link" title="Project link">
+                                <i class="icon-link"></i>
+                            </a>
+
+                            <div class="item-folio__caption">
+                                <p>Ms. Killer's new book echoes all of her other works in that it's about snakes.  She's really obsessed.  It's odd, but we like it.</p>
+                            </div>
+
+                        </div>
+                    </div> <!-- end masonry__brick -->
+
+                    <div class="masonry__brick" data-aos="fade-up">
+                        <div class="item-folio">
+
+                            <div class="item-folio__thumb">
+                                <a href="./resources/books/3.jpg" class="thumb-link" title="HP3" data-size="1050x700">
+                                    <img src="./resources/books/3.jpg"
+                                         srcset="./resources/books/3.jpg 1x, ./resources/books/3.jpg 2x" alt="">
+                                </a>
+                            </div>
+
+                            <div class="item-folio__text">
+                                <h3 class="item-folio__title">
+                                    Ann Patchett
+                                </h3>
+                                <p class="item-folio__cat">
+                                    Prisoner of Azkaban
+                                </p>
+                            </div>
+
+                            <a href="#" class="item-folio__project-link" title="Project link">
+                                <i class="icon-link"></i>
+                            </a>
+
+                            <div class="item-folio__caption">
+                                <p>A true love story for all the Buckbeak fans out there.  Plus, there's a fat man who turns into a rat. Pretty cool stuff.</p>
+                            </div>
+
+                        </div>
+                    </div> <!-- end masonry__brick -->
+
+                    <div class="masonry__brick" data-aos="fade-up">
+                        <div class="item-folio">
+
+                            <div class="item-folio__thumb">
+                                <a href="./resources/books/4.jpg" class="thumb-link" title="HP4" data-size="1050x700">
+                                    <img src="./resources/books/4.jpg"
+                                         srcset="./resources/books/4.jpg 1x, ./resources/books/4.jpg 2x" alt="">
+                                </a>
+                            </div>
+
+                            <div class="item-folio__text">
+                                <h3 class="item-folio__title">
+                                    Rebecca Lee
+                                </h3>
+                                <p class="item-folio__cat">
+                                    Goblet of Fire
+                                </p>
+                            </div>
+
+                            <a href="#" class="item-folio__project-link" title="Project link">
+                                <i class="icon-link"></i>
+                            </a>
+
+                            <div class="item-folio__caption">
+                                <p>
+                                  In the wizarding world, I guess they don't have basketball.  So they send their kids off on death missions, which Rebecca Lee apparently thinks is fine.
+                                </p>
+                            </div>
+
+                        </div>
+                    </div> <!-- end masonry__brick -->
+
+                    <div class="masonry__brick" data-aos="fade-up">
+                        <div class="item-folio">
+
+                            <div class="item-folio__thumb">
+                                <a href="./resources/books/5.jpg" class="thumb-link" title="HP5" data-size="1050x700">
+                                    <img src="./resources/books/5.jpg"
+                                         srcset="./resources/books/5.jpg 1x, ./resources/books/5.jpg 2x" alt="">
+                                </a>
+                            </div>
+
+                            <div class="item-folio__text">
+                                <h3 class="item-folio__title">
+                                    John Irving
+                                </h3>
+                                <p class="item-folio__cat">
+                                    Order of the Phoenix
+                                </p>
+                            </div>
+
+                            <a href="#" class="item-folio__project-link" title="Project link">
+                                <i class="icon-link"></i>
+                            </a>
+
+                            <div class="item-folio__caption">
+                                <p>
+                                  John Irving's new book is so much better than his last one, that creepy AI-generated work of nonsense.
+                                  </p>
+                            </div>
+
+                        </div>
+                    </div> <!-- end masonry__brick -->
+
+                    <div class="masonry__brick" data-aos="fade-up">
+                        <div class="item-folio">
+
+                            <div class="item-folio__thumb">
+                                <a href="./resources/books/6.jpg" class="thumb-link" title="HP6" data-size="1050x700">
+                                    <img src="./resources/books/6.jpg"
+                                         srcset="./resources/books/6.jpg 1x, ./resources/books/6.jpg 2x" alt="">
+                                </a>
+                            </div>
+
+                            <div class="item-folio__text">
+                                <h3 class="item-folio__title">
+                                    Barbera Kingsolver
+                                </h3>
+                                <p class="item-folio__cat">
+                                    Half Blood Prince
+                                </p>
+                            </div>
+
+                            <a href="3" class="item-folio__project-link" title="Project link">
+                                <i class="icon-link"></i>
+                            </a>
+
+                            <div class="item-folio__caption">
+                                <p>
+
+                                  Even though the title sounds a little racist, Barb's new book is actaully <i>incredibly</i> racist, featuring a war and men in hoods.
+
+                                </p>
+                            </div>
+
+                        </div>
+                    </div> <!-- end masonry__brick -->
+
+                </div> <!-- end masonry -->
+            </div> <!-- end col-full -->
+        </div> <!-- end works-content -->
+
+    </section> <!-- end s-works -->
+
+
+
+
+
+    <!-- clients
+    ================================================== -->
+
+
+<!--
+
+    <section id="clients" class="s-clients">
+
+        <div class="row section-header" data-aos="fade-up">
+            <div class="col-full">
+                <h3 class="subhead">Our Clients</h3>
+                <h1 class="display-2">Glint has been honored to
+                partner up with these clients</h1>
+            </div>
         </div>
-      </div>
+
+      -->
+
+        <!-- end section-header -->
+
+<!--
+
+        <div class="row clients-outer" data-aos="fade-up">
+            <div class="col-full">
+                <div class="clients">
+
+                    <a href="#0" title="" class="clients__slide"><img src="images/clients/apple.png" /></a>
+                    <a href="#0" title="" class="clients__slide"><img src="images/clients/atom.png" /></a>
+                    <a href="#0" title="" class="clients__slide"><img src="images/clients/blackberry.png" /></a>
+                    <a href="#0" title="" class="clients__slide"><img src="images/clients/dropbox.png" /></a>
+                    <a href="#0" title="" class="clients__slide"><img src="images/clients/envato.png" /></a>
+                    <a href="#0" title="" class="clients__slide"><img src="images/clients/firefox.png" /></a>
+                    <a href="#0" title="" class="clients__slide"><img src="images/clients/joomla.png" /></a>
+                    <a href="#0" title="" class="clients__slide"><img src="images/clients/magento.png" /></a>
+
+                </div>
+
+              -->
+
+                <!-- end clients -->
+            <!-- </div>--> <!-- end col-full -->
+        <!-- </div> --> <!-- end clients-outer -->
+
+<!--
+
+        <div class="row clients-testimonials" data-aos="fade-up">
+            <div class="col-full">
+                <div class="testimonials">
+
+                    <div class="testimonials__slide">
+
+                        <p>Qui ipsam temporibus quisquam vel. Maiores eos cumque distinctio nam accusantium ipsum.
+                        Laudantium quia consequatur molestias delectus culpa facere hic dolores aperiam. Accusantium quos qui praesentium corpori.
+                        Excepturi nam cupiditate culpa doloremque deleniti repellat.</p>
+
+                        <img src="images/avatars/user-01.jpg" alt="Author image" class="testimonials__avatar">
+                        <div class="testimonials__info">
+                            <span class="testimonials__name">Tim Cook</span>
+                            <span class="testimonials__pos">CEO, Apple</span>
+                        </div>
+
+                    </div>
+
+                    <div class="testimonials__slide">
+
+                        <p>Excepturi nam cupiditate culpa doloremque deleniti repellat. Veniam quos repellat voluptas animi adipisci.
+                        Nisi eaque consequatur. Quasi voluptas eius distinctio. Atque eos maxime. Qui ipsam temporibus quisquam vel.</p>
+
+                        <img src="images/avatars/user-05.jpg" alt="Author image" class="testimonials__avatar">
+                        <div class="testimonials__info">
+                            <span class="testimonials__name">Sundar Pichai</span>
+                            <span class="testimonials__pos">CEO, Google</span>
+                        </div>
+
+                    </div>
+
+                    <div class="testimonials__slide">
+
+                        <p>Repellat dignissimos libero. Qui sed at corrupti expedita voluptas odit. Nihil ea quia nesciunt. Ducimus aut sed ipsam.
+                        Autem eaque officia cum exercitationem sunt voluptatum accusamus. Quasi voluptas eius distinctio.</p>
+
+                        <img src="images/avatars/user-02.jpg" alt="Author image" class="testimonials__avatar">
+                        <div class="testimonials__info">
+                            <span class="testimonials__name">Satya Nadella</span>
+                            <span class="testimonials__pos">CEO, Microsoft</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+              -->
+
+                <!-- end testimonials -->
+
+          <!--  </div>  end col-full -->
+        <!-- </div>  end client-testimonials -->
+
+  <!--  </section> end s-clients -->
 
 
-      <div class="card mb-3">
-        <div style = "padding-left:50px; padding-right:50px; padding-top:20px"> <img class="card-img-top" src="./resources/images/bird.png" alt="Grey Matters"> </div>
-        <div class="card-body">
-          <h5 class="card-title">Birdwalks</h5>
-          <p class="card-text">Our new podcast, where we discuss everything from guns to feminism to sandwiches. And books, of course. Sometimes.</p>
-          <p class="card-text"><small class="text-muted">Latest episode: "the philosophy of baseball" with Mike</small></p>
+    <!-- contact
+    ================================================== -->
+    <section id="contact" class="s-contact">
+
+        <div class="overlay"></div>
+        <div class="contact__line"></div>
+
+        <div class="row section-header" data-aos="fade-up">
+            <div class="col-full">
+                <h3 class="subhead">Contact Us</h3>
+                <h1 class="display-2 display-2--light">Reach out with any questions, comments, or just to say hello</h1>
+            </div>
         </div>
-      </div>
 
+        <div class="row contact-content" data-aos="fade-up">
+
+            <div class="contact-primary">
+
+                <h3 class="h6">Send Us A Message</h3>
+
+                <form name="contactForm" id="contactForm" method="post" action="" novalidate="novalidate">
+                    <fieldset>
+
+                    <div class="form-field">
+                        <input name="contactName" type="text" id="contactName" placeholder="Your Name" value="" minlength="2" required="" aria-required="true" class="full-width">
+                    </div>
+                    <div class="form-field">
+                        <input name="contactEmail" type="email" id="contactEmail" placeholder="Your Email" value="" required="" aria-required="true" class="full-width">
+                    </div>
+                    <div class="form-field">
+                        <input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="" class="full-width">
+                    </div>
+                    <div class="form-field">
+                        <textarea name="contactMessage" id="contactMessage" placeholder="Your Message" rows="10" cols="50" required="" aria-required="true" class="full-width"></textarea>
+                    </div>
+                    <div class="form-field">
+                        <button class="full-width btn--primary">Submit</button>
+                        <div class="submit-loader">
+                            <div class="text-loader">Sending...</div>
+                            <div class="s-loader">
+                                <div class="bounce1"></div>
+                                <div class="bounce2"></div>
+                                <div class="bounce3"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    </fieldset>
+                </form>
+
+                <!-- contact-warning -->
+                <div class="message-warning">
+                    Something went wrong. Please try again.
+                </div>
+
+                <!-- contact-success -->
+                <div class="message-success">
+                    Your message was sent, thank you!<br>
+                </div>
+
+            </div> <!-- end contact-primary -->
+
+            <div class="contact-secondary">
+                <div class="contact-info">
+
+                    <h3 class="h6 hide-on-fullwidth">Contact Info</h3>
+
+                    <div class="cinfo">
+                        <h5>Where to Find Us</h5>
+                        <p>
+                            1234 Main Street<br>
+                            San Francisco, CA<br>
+                            94131 US
+                        </p>
+                    </div>
+
+                    <div class="cinfo">
+                        <h5>Email Us At</h5>
+                        <p>
+                            hello@bullfinchbooks.com<br>
+                            submissions@bullfinchbooks.com
+                        </p>
+                    </div>
+
+                    <div class="cinfo">
+                        <h5>Call Us At</h5>
+                        <p>
+                            Phone: (+1) 650-199-2665<br>
+                            Mobile: (+1) 650-199-2665
+                        </p>
+                    </div>
+
+                    <ul class="contact-social">
+                        <li>
+                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+                        </li>
+                    </ul> <!-- end contact-social -->
+
+                </div> <!-- end contact-info -->
+            </div> <!-- end contact-secondary -->
+
+        </div> <!-- end contact-content -->
+
+    </section> <!-- end s-contact -->
+
+
+    <!-- footer
+    ================================================== -->
+    <footer>
+
+        <div class="row footer-main">
+
+            <div class="col-six tab-full left footer-desc">
+
+                <div class="footer-logo"></div>
+
+
+                Thanks for visiting bullfinchbooks.com.  Dont forget to sign up for the mailing list, or contact us with any questions about submitting, interning, or purchasing any books!
+                Our online store will is currently being built and will be up and running soon.  Check back later!
+
+            </div>
+
+            <div class="col-six tab-full right footer-subscribe">
+
+                <h4>Get Updates</h4>
+                <p>
+
+                  Join our mailing list to get updated about new books, podcasts, and more!
+
+                </p>
+
+                <div class="subscribe-form">
+                    <form id="mc-form" class="group" novalidate="true">
+                        <input type="email" value="" name="EMAIL" class="email" id="mc-email" placeholder="Email Address" required="">
+                        <input type="submit" name="subscribe" value="Subscribe">
+                        <label for="mc-email" class="subscribe-message"></label>
+                    </form>
+                </div>
+
+            </div>
+
+        </div> <!-- end footer-main -->
+
+        <div class="row footer-bottom">
+
+            <div class="col-twelve">
+                <div class="copyright">
+                    <span>© Copyright Bullfinch 2015</span>
+                    <!-- <span>Site Template by <a href="https://www.colorlib.com/">Colorlib</a></span> -->
+                </div>
+
+                <div class="go-top">
+                    <a class="smoothscroll" title="Back to Top" href="#top"><i class="icon-arrow-up" aria-hidden="true"></i></a>
+                </div>
+            </div>
+
+        </div> <!-- end footer-bottom -->
+
+    </footer> <!-- end footer -->
+
+
+    <!-- photoswipe background
+    ================================================== -->
+    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title=
+                    "Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title=
+                    "Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title=
+                "Next (arrow right)"></button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div> <!-- end photoSwipe background -->
+
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader">
+            <div class="line-scale-pulse-out">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
     </div>
 
-</div>
 
-<footer class="footer-distributed">
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
 
-  <div class="footer-left">
+</body>
 
-    <h3 class="footerLogo">bullfinch</h3>
-
-    <p class="footer-links">
-
-      <a href="#">about</a>
-      ·
-      <a href="#">blog</a>
-      ·
-      <a href="#">media</a>
-      ·
-      <a href="#">submissions</a>
-      ·
-      <a href="#">magazine</a>
-    </p>
-
-    <p class="footer-company-name">bullfinch books &copy; 2018</p>
-  </div>
-
-  <div class="footer-center">
-
-    <div>
-      <i class="fa fa-map-marker"></i> &nbsp;
-      <p class="aboutText"><span class="aboutText"> SF | DC</span> ca | dc</p>
-    </div>
-<br>
-    <div>
-      <i class="fa fa-phone"></i>
-      <p class="aboutText"> (530) 429-2665</p>
-    </div>
-<br>
-    <div>
-      <i class="fa fa-envelope"></i>
-      <p class="aboutText"><a href="mailto:contact@bullfinchbooks.com" class="aboutText">contact@bullfinchbooks.com</a></p>
-    </div>
-
-  </div>
-
-  <div class="footer-right">
-
-    <p class="footer-company-about">
-      <span class = "aboutText">About Us</span>
-      Hello.  We are bullfinch books. We publish things we think are great, and also some things we write.
-      Please check back soon for more information. Period.
-    </p>
-
-    <div class="footer-icons">
-
-      <a href="#"><i class="fa fa-facebook"></i></a>
-      <a href="#"><i class="fa fa-twitter"></i></a>
-      <a href="#"><i class="fa fa-linkedin"></i></a>
-      <a href="#"><i class="fa fa-github"></i></a>
-
-    </div>
-
-  </div>
-
-</footer>
-
-
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-    <script type="text/javascript">
-        $(window).on('load',function(){
-            $('#subscribeBox').modal('show');
-        });
-    </script>
-
-    <script>
-
-    function searchFunc() {
-        var x = document.getElementById("searchId");
-        if (x.style.display === "none") {
-            x.style.display = "block";
-        } else {
-            x.style.display = "none";
-        }
-    }
-
-    </script>
-
-
-  </body>
 </html>
