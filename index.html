@@ -33,6 +33,34 @@
     ================================================== -->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href='https://fonts.googleapis.com/css?family=PT Sans Narrow' rel='stylesheet'>
+
+
+    <style>
+
+    .headerLink {
+        font-family: 'PT Sans Narrow' !important;
+        color: white !important;
+        font-size: 30px;
+    }
+
+    .taglineText {
+      font-family: 'PT Sans Narrow' !important;
+      font-weight: 100 !important;
+      font-size: 80px !important;
+    }
+
+    .centerDiv {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    #about {
+      font-family: 'PT Sans Narrow' !important;
+    }
+
+    </style>
 
 </head>
 
@@ -43,8 +71,8 @@
     <header class="s-header">
 
         <div class="header-logo">
-            <a class="site-logo" href="index.html">
-                <img src="./resources/books/logo.png" alt="Homepage">
+            <a class="site-logo headerLink" href="index.html">
+              <b>bull</b><i>finch</i>
             </a>
         </div>
 
@@ -53,7 +81,7 @@
             <a href="#0" class="header-nav__close" title="close"><span>Close</span></a>
 
             <div class="header-nav__content">
-                <h3>Navigation</h3>
+                <h3>MENU</h3>
 
                 <ul class="header-nav__list">
                     <li class="current"><a class="smoothscroll"  href="#home" title="home">Home</a></li>
@@ -65,7 +93,9 @@
                     <li><a class="smoothscroll"  href="#contact" title="contact">Contact</a></li>
                 </ul>
 
-                <p>Thanks for visting bullfinch! <a href='#0'>Click Here</a> for information about whatever we make this link to later. </p>
+                <p>
+                  <!-- content here will appear in the menu -->
+                </p>
 
                 <ul class="header-nav__social">
                     <li>
@@ -90,7 +120,12 @@
         </nav>  <!-- end header-nav -->
 
         <a class="header-menu-toggle" href="#0">
-            <span class="header-menu-text">Menu</span>
+
+            <!-- maybe put in search box?
+            <input class="button" placeholder="Search..." />
+          -->
+
+            <span class="header-menu-text"> </span>
             <span class="header-menu-icon"></span>
         </a>
 
@@ -110,19 +145,20 @@
 
                 <!-- <h3>Hello,</h3> -->
 
-                <h1>
+                <h1 class="taglineText">
                     we print books <br>
                     that we like. <br>
                 </h1>
 
                 <div class="home-content__buttons">
+                    <a href="#about" class="smoothscroll btn btn--stroke">
+                        More about us
+                    </a>
                     <a href="#contact" class="smoothscroll btn btn--stroke">
                         Get in touch
                     </a>
-                    <a href="#about" class="smoothscroll btn btn--stroke">
-                        More About Us
-                    </a>
                 </div>
+
 
             </div>
 
@@ -166,7 +202,7 @@
         <div class="row section-header has-bottom-sep" data-aos="fade-up">
             <div class="col-full">
                 <h3 class="subhead subhead--dark">hello there,</h3>
-                <h1 class="display-1 display-1--light">we are bullfinch</h1>
+                <h1 class="display-1 display-1--light">we are <b>bull</b><i>finch</i></h1>
             </div>
         </div> <!-- end section-header -->
 
@@ -180,11 +216,22 @@
 
         <div class="row" data-aos="fade-up">
 
-          we are a small publishing house in San Francisco, CA.  we appreciate all of the niche book publishers out there, but we've found that
-          all these purpose-driven books left us feeling a little alienated. We care about being politically correct, and giving a voice to the underdogs, and all that...
-          but we also care about great writing. bullfinch is a place that won't turn anyone down because of their perspective or voice, but we also dont want to publish
-          people <i>just because</i> of their perspective. our submissions process is 100% blind, and we'll publish any works that we love.
-
+          we are a small press (<b>bull</b>) & literary magazine (<i>finch</i>) based in San Francisco. we
+        appreciate niche publishers, niche writers, and nice readers&#8212;they’re doing an
+        outstanding job advocating for niche content. but our approach to publishing is
+        more egalitarian. you won’t find mission statements here. we aren’t committed to
+        women over men. we aren’t interested in one political ideology over another. we
+        don’t prefer “experimental” over literary fiction. we care about great writing.
+        you’re absolutely encouraged to shock us&#8212;but we’d also like to be comforted,
+        uplifted, energized, delighted, bewildered. we’re interested in writing that makes
+        us feel. if your writing does that, it doesn’t matter who you are&#8212;there is a place
+        for you here. our submission process is 100% blind, and we’ll publish what we
+        love without regard to who or where it comes from.
+        </div>
+        <div class="home-content__buttons centerDiv">
+            <a href="#" class="smoothscroll btn btn--stroke">
+                The Team
+            </a>
         </div>
 
 <!--
@@ -211,10 +258,18 @@
         </div>
       -->
          <!-- end about-stats -->
-
+         <br>
+         <div class="about-content__scroll">
+             <a href="#services" class="scroll-link smoothscroll">
+                 <span>more</span>
+             </a>
+         </div>
+         <div class="about-content__line"></div>
         <div class="about__line"></div>
 
     </section> <!-- end s-about -->
+
+
 
 
     <!-- services
@@ -314,6 +369,15 @@
             </div>
 
         </div> <!-- end services-list -->
+
+        <br>
+        <div class="media-content__scroll">
+            <a href="#services" class="scroll-link smoothscroll">
+                <span>more</span>
+            </a>
+        </div>
+        <div class="media-content__line"></div>
+       <div class="media__line"></div>
 
     </section> <!-- end s-services -->
 
