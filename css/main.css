@@ -855,8 +855,9 @@ button.btn--primary:focus,
 input[type="submit"].btn--primary:focus,
 input[type="reset"].btn--primary:focus,
 input[type="button"].btn--primary:focus {
-    background: #33a242;
-    border-color: #33a242;
+    background: white;
+    border-color: #ff5353;
+    color:#ff5353;
 }
 
 
@@ -864,7 +865,7 @@ input[type="button"].btn--primary:focus {
  * ------------------------------------------------- */
 
 .btn.full-width, button.full-width {
-    width: 100%;
+    width: 49%;
     margin-right: 0;
 }
 
@@ -2012,6 +2013,67 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 
+
+.news__line {
+    display: block;
+    width: 2px;
+    height: 10.2rem;
+    background-color: black;
+    position: absolute;
+    right: 7.2rem;
+    top: 0;
+}
+
+.news-content__scroll {
+    position: absolute;
+    right: 9.5rem;
+    bottom: 8.4rem;
+}
+
+.news-content__scroll a {
+    font-family: "montserrat-semibold", sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    color: black;
+    position: relative;
+    display: inline-block;
+    line-height: 3rem;
+    padding-left: 2.5rem;
+}
+
+.news-content__scroll a::before {
+    border-bottom: 2px solid #ff5353;
+    border-right: 2px solid #ff5353;
+    content: '';
+    display: block;
+    height: 8px;
+    width: 8px;
+    margin-top: -6px;
+    pointer-events: none;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    -webkit-transform-origin: 66% 66%;
+    -ms-transform-origin: 66% 66%;
+    transform-origin: 66% 66%;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+
+.news-content__line {
+    display: block;
+    width: 2px;
+    height: 10.2rem;
+    background-color: black;
+    position: absolute;
+    right: 7.2rem;
+    bottom: 0;
+}
+
 /* -------------------------------------------------------------------
  * ## home social
  * ------------------------------------------------------------------- */
@@ -2913,8 +2975,10 @@ html.no-csstransitions .home-content__main {
     margin: 0 10%;
 }
 
+
+
 .clients-testimonials .testimonials p {
-    font-family: "lora-regular", serif;
+    /*font-family: "lora-regular", serif;*/
     font-size: 3rem;
     line-height: 1.8;
     color: #555555;

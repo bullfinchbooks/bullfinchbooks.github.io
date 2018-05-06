@@ -36,7 +36,16 @@
     <link href='https://fonts.googleapis.com/css?family=PT Sans Narrow' rel='stylesheet'>
 
 
+    <!-- font awesome
+    ================================================== -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+
     <style>
+
+    .bg {
+
+      font-family: 'PT Sans Narrow' !important;
+    }
 
     .headerLink {
         font-family: 'PT Sans Narrow' !important;
@@ -60,11 +69,23 @@
       font-family: 'PT Sans Narrow' !important;
     }
 
+    .clientsFont {
+      font-family: 'PT Sans Narrow' !important;
+    }
+
+    #services {
+      font-family: 'PT Sans Narrow' !important;
+    }
+
+    #contact {
+      font-family: 'PT Sans Narrow' !important;
+    }
+
     </style>
 
 </head>
 
-<body id="top">
+<body id="top" class='bg'>
 
     <!-- header
     ================================================== -->
@@ -86,10 +107,11 @@
                 <ul class="header-nav__list">
                     <li class="current"><a class="smoothscroll"  href="#home" title="home">Home</a></li>
                     <li><a class="smoothscroll"  href="#about" title="about">About</a></li>
-                    <li><a class="smoothscroll"  href="#services" title="media">Media</a></li>
-                    <li><a class="smoothscroll"  href="#works" title="blog">Blog</a></li>
-                    <li><a class="smoothscroll"  href="#clients" title="submissions">Submissions</a></li>
-                    <li><a class="smoothscroll"  href="#clients" title="magazine">Magazine</a></li>
+                    <li><a class="smoothscroll"  href="#services" title="media">Blog</a></li>
+                    <li><a class="smoothscroll"  href="#works" title="blog"><i>finch</i> online</a></li>
+                    <li><a class="smoothscroll"  href="#clients" title="submissions"><b>bull</b> print</a></li>
+                    <li><a class="smoothscroll"  href="#clients" title="magazine">Submissions</a></li>
+                    <li><a class="smoothscroll"  href="#clients" title="magazine">News</a></li>
                     <li><a class="smoothscroll"  href="#contact" title="contact">Contact</a></li>
                 </ul>
 
@@ -98,21 +120,15 @@
                 </p>
 
                 <ul class="header-nav__social">
-                    <li>
-                        <a href="#"><i class="fa fa-facebook"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-twitter"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-instagram"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-behance"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-dribbble"></i></a>
-                    </li>
+                  <li>
+                      <a href="#"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                  </li>
+                  <li>
+                      <a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                  </li>
+                  <li>
+                      <a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                  </li>
                 </ul>
 
             </div> <!-- end header-nav__content -->
@@ -175,20 +191,15 @@
 
         <ul class="home-social">
             <li>
-                <a href="#0"><i class="fa fa-facebook" aria-hidden="true"></i><span>Facebook</span></a>
+                <a href="#0"><i class="fab fa-facebook-f" aria-hidden="true"></i><span>Facebook</span></a>
             </li>
             <li>
-                <a href="#0"><i class="fa fa-twitter" aria-hidden="true"></i><span>Twiiter</span></a>
+                <a href="#0"><i class="fab fa-twitter" aria-hidden="true"></i><span>Twiiter</span></a>
             </li>
             <li>
-                <a href="#0"><i class="fa fa-instagram" aria-hidden="true"></i><span>Instagram</span></a>
+                <a href="#0"><i class="fab fa-instagram" aria-hidden="true"></i><span>Instagram</span></a>
             </li>
-            <li>
-                <a href="#0"><i class="fa fa-behance" aria-hidden="true"></i><span>Behance</span></a>
-            </li>
-            <li>
-                <a href="#0"><i class="fa fa-dribbble" aria-hidden="true"></i><span>Dribbble</span></a>
-            </li>
+
         </ul>
         <!-- end home-social -->
 
@@ -287,13 +298,66 @@
 
             <div class="col-block service-item" data-aos="fade-up">
                 <div class="service-icon">
+                    <i class="far fa-newspaper" aria-hidden="true"></i>
+                </div>
+                <div class="service-text">
+                    <h3 class="h2"><i>finch</i> MAGAZINE</h3>
+                    <p>
+                      our online literary magazine publishes prose&#8212;fiction and nonfiction. we’re not especially preoccupied with genre. our goal is to publish engaging work&#8212;no
+                      matter who wrote it, or why. new, emerging, and established writers welcome here.
+
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon">
+                    <i class="fas fa-laptop" aria-hidden="true"></i>
+                </div>
+                <div class="service-text">
+                    <h3 class="h2">BLOG</h3>
+                    <p>
+                    our online clearing house for all <b>bull</b><i>finch</i>&#8212;related content. most posts will be about the literary world, ours and others’
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon">
+                    <i class="fas fa-podcast" aria-hidden="true"></i>
+                </div>
+                <div class="service-text">
+                    <h3 class="h2">PODCAST</h3>
+                    <p>
+                      COMING SOON! it's called <i>birdwalks</i>, and we'll talk about everything from
+                      books to guns to feminism to what cute thing Rumpus did today.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon">
+                    <i class="far fa-bookmark" aria-hidden="true"></i>
+                </div>
+                <div class="service-text">
+                    <h3 class="h2">READING SERIES</h3>
+                    <p>
+                      <b>bull</b><i>finch</i>’s guided reading series is offered on a seasonal basis&#8212;like a book club, but better. because you don’t have to show up or bring snacks you are
+                      only pretending to have made. we alternate selections, so every other month will be a pretty terrible
+                      book.  but you have to read it, and we're not telling you which month is the bad one.
+
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon">
                     <i class="fa fa-book" aria-hidden="true"></i>
                 </div>
                 <div class="service-text">
                     <h3 class="h2">BOOKS</h3>
                     <p>
-                      we read every manuscript that comes our way, and publish some of them. our goal is to
-                      print great, engaging works——no matter who wrote it, or why.
+                      COMING SOON!  <b>bull</b> books. it's going to be neat, probably.
 
                     </p>
                 </div>
@@ -301,69 +365,11 @@
 
             <div class="col-block service-item" data-aos="fade-up">
                 <div class="service-icon">
-                    <i class="fa fa-indent" aria-hidden="true"></i>
-                </div>
+                  <i class="far fa-edit" aria-hidden="true"></i></div>
                 <div class="service-text">
-                    <h3 class="h2">MAGAZINE</h3>
+                    <h3 class="h2">SERVICES</h3>
                     <p>
-                      <i>finch</i> is our literary magazine. it's designed to give a voice to all the
-                        totally normal people out there, who are rad but can get lost in all the politics.
-                      </thead>
-                    </p>
-                </div>
-            </div>
-
-            <div class="col-block service-item" data-aos="fade-up">
-                <div class="service-icon">
-                    <i class="fa fa-pencil" aria-hidden="true"></i>
-                </div>
-                <div class="service-text">
-                    <h3 class="h2">EDITING</h3>
-                    <p>
-                      not ready to publish?  send your stuff in anyways!  we'll read it (just for fun), and
-                      can give you brief feedback. or, if you're in SF, invite us out for tacos. we'll chat books with you.
-
-
-                    </p>
-                </div>
-            </div>
-
-            <div class="col-block service-item" data-aos="fade-up">
-                <div class="service-icon">
-                    <i class="fa fa-rss" aria-hidden="true"></i>
-                </div>
-                <div class="service-text">
-                    <h3 class="h2">BLOG</h3>
-                    <p>
-                      our blog is somewhat intended to be about books, but it's really so we can
-                      keep writing and pretend we're doing work. it's a good blog, check it out!
-
-                    </p>
-                </div>
-            </div>
-
-            <div class="col-block service-item" data-aos="fade-up">
-                <div class="service-icon">
-                    <i class="fa fa-microphone" aria-hidden="true"></i>
-                </div>
-                <div class="service-text">
-                    <h3 class="h2">PODCAST</h3>
-                    <p>
-                      <i>birdwalks</i> is our podcast, where we talk about everything from
-                      books to guns to feminism to what cute thing Rumpus did today.
-
-                    </p>
-                </div>
-            </div>
-
-            <div class="col-block service-item" data-aos="fade-up">
-                <div class="service-icon">
-                  <i class="fa fa-users" aria-hidden="true"></i></div>
-                <div class="service-text">
-                    <h3 class="h2">READING SERIES</h3>
-                    <p>
-                      book club! we alternate selections, so every other month will be a pretty terrible
-                      book.  but you have to read it, and we're not telling you which month is the bad one.
+                      COMING SOON!  developmental editing, line editing, craft critique, workshopping. more or less.
                     </p>
                 </div>
             </div>
@@ -372,7 +378,7 @@
 
         <br>
         <div class="media-content__scroll">
-            <a href="#services" class="scroll-link smoothscroll">
+            <a href="#clients" class="scroll-link smoothscroll">
                 <span>more</span>
             </a>
         </div>
@@ -384,6 +390,9 @@
 
     <!-- works
     ================================================== -->
+
+<!--
+
     <section id='works' class="s-works">
 
         <div class="intro-wrap">
@@ -393,9 +402,13 @@
                     <h3 class="subhead">RECENT WORKS</h3>
                     <h1 class="display-2 display-2--light">by bullfinch authors and such</h1>
                 </div>
-            </div> <!-- end section-header -->
+            </div>
+-->
+            <!-- end section-header -->
 
-        </div> <!-- end intro-wrap -->
+
+<!--
+        </div>
 
         <div class="row works-content">
             <div class="col-full masonry-wrap">
@@ -431,8 +444,10 @@
                             </div>
 
                         </div>
-                    </div> <!-- end masonry__brick -->
-
+                    </div>
+-->
+                    <!-- end masonry__brick -->
+<!--
                     <div class="masonry__brick" data-aos="fade-up">
                         <div class="item-folio">
 
@@ -461,8 +476,10 @@
                             </div>
 
                         </div>
-                    </div> <!-- end masonry__brick -->
-
+                    </div>
+-->
+                    <!-- end masonry__brick -->
+<!--
                     <div class="masonry__brick" data-aos="fade-up">
                         <div class="item-folio">
 
@@ -491,8 +508,10 @@
                             </div>
 
                         </div>
-                    </div> <!-- end masonry__brick -->
-
+                    </div>
+-->
+                    <!-- end masonry__brick -->
+<!--
                     <div class="masonry__brick" data-aos="fade-up">
                         <div class="item-folio">
 
@@ -523,8 +542,10 @@
                             </div>
 
                         </div>
-                    </div> <!-- end masonry__brick -->
-
+                    </div>
+-->
+                    <!-- end masonry__brick -->
+<!--
                     <div class="masonry__brick" data-aos="fade-up">
                         <div class="item-folio">
 
@@ -555,8 +576,10 @@
                             </div>
 
                         </div>
-                    </div> <!-- end masonry__brick -->
-
+                    </div>
+-->
+                    <!-- end masonry__brick -->
+<!--
                     <div class="masonry__brick" data-aos="fade-up">
                         <div class="item-folio">
 
@@ -589,14 +612,16 @@
                             </div>
 
                         </div>
-                    </div> <!-- end masonry__brick -->
+                    </div>
+-->
+                    <!-- end masonry__brick -->
+<!--
+                </div>
+            </div>
+        </div>
 
-                </div> <!-- end masonry -->
-            </div> <!-- end col-full -->
-        </div> <!-- end works-content -->
-
-    </section> <!-- end s-works -->
-
+    </section>
+-->
 
 
 
@@ -605,19 +630,18 @@
     ================================================== -->
 
 
-<!--
+
 
     <section id="clients" class="s-clients">
 
-        <div class="row section-header" data-aos="fade-up">
+        <div class="row section-header clientsFont" data-aos="fade-up">
             <div class="col-full">
-                <h3 class="subhead">Our Clients</h3>
-                <h1 class="display-2">Glint has been honored to
-                partner up with these clients</h1>
+                <h3 class="subhead">News & Praise</h3>
+                <h1 class="display-2"><b>bull</b><i>finch</i> is awesome, and here is the proof.  And some news.</h1>
             </div>
         </div>
 
-      -->
+
 
         <!-- end section-header -->
 
@@ -638,68 +662,88 @@
 
                 </div>
 
-              -->
+-->
 
                 <!-- end clients -->
             <!-- </div>--> <!-- end col-full -->
         <!-- </div> --> <!-- end clients-outer -->
 
-<!--
 
-        <div class="row clients-testimonials" data-aos="fade-up">
+
+        <div class="row clients-testimonials clientsFont" data-aos="fade-up">
             <div class="col-full">
                 <div class="testimonials">
 
                     <div class="testimonials__slide">
 
-                        <p>Qui ipsam temporibus quisquam vel. Maiores eos cumque distinctio nam accusantium ipsum.
-                        Laudantium quia consequatur molestias delectus culpa facere hic dolores aperiam. Accusantium quos qui praesentium corpori.
-                        Excepturi nam cupiditate culpa doloremque deleniti repellat.</p>
+                        <p>"bullfinch is literally the best publishing house on the planet. I fly out to SF to buy my copies of <i>finch</i> in person because when I'm there, I get a little funnier, I smell better, and I can dunk like LeBron."</p>
 
-                        <img src="images/avatars/user-01.jpg" alt="Author image" class="testimonials__avatar">
+                        <img src="images/avatars/ann.jpg" alt="Ann" class="testimonials__avatar">
                         <div class="testimonials__info">
-                            <span class="testimonials__name">Tim Cook</span>
-                            <span class="testimonials__pos">CEO, Apple</span>
+                            <span class="testimonials__name">Ann Patchett</span>
+                            <span class="testimonials__pos">dog-godmother, Rumpus and Bella</span>
                         </div>
 
                     </div>
 
                     <div class="testimonials__slide">
 
-                        <p>Excepturi nam cupiditate culpa doloremque deleniti repellat. Veniam quos repellat voluptas animi adipisci.
-                        Nisi eaque consequatur. Quasi voluptas eius distinctio. Atque eos maxime. Qui ipsam temporibus quisquam vel.</p>
+                        <h3> NEWS! </h3>
+                        <p>The newest reading series book has been chosen! "<i>springfield</i>", by Wynter M. Killer. It's dark because she's currently in a bad mood&#8212;but maybe this'll cheer her up. It's a great book. Unless you like the cold. She's really mean to the cold.</p>
 
-                        <img src="images/avatars/user-05.jpg" alt="Author image" class="testimonials__avatar">
                         <div class="testimonials__info">
-                            <span class="testimonials__name">Sundar Pichai</span>
-                            <span class="testimonials__pos">CEO, Google</span>
+                            <span class="testimonials__name">Reading Series #14</span>
+                            <span class="testimonials__pos"><i>springfield</i>, Wynter M. Killer</span>
+                            <span class="testimonials__pos">May 5th, 2018-July 5th, 2018</span>
                         </div>
 
                     </div>
 
                     <div class="testimonials__slide">
 
-                        <p>Repellat dignissimos libero. Qui sed at corrupti expedita voluptas odit. Nihil ea quia nesciunt. Ducimus aut sed ipsam.
-                        Autem eaque officia cum exercitationem sunt voluptatum accusamus. Quasi voluptas eius distinctio.</p>
+                        <p>
+                          I've seen publishing houses come and go, but <b>bull</b><i>finch</i> has something special. I really feel like it's all the surfing they do, and the fact that Wynter gives out headrubs sometimes. That's a recipe for success. Just sayin'.
+                        </p>
 
-                        <img src="images/avatars/user-02.jpg" alt="Author image" class="testimonials__avatar">
+                        <img src="images/avatars/liz.jpg" alt="Elizabeth" class="testimonials__avatar">
                         <div class="testimonials__info">
-                            <span class="testimonials__name">Satya Nadella</span>
-                            <span class="testimonials__pos">CEO, Microsoft</span>
+                            <span class="testimonials__name">Elizabeth Kostova</span>
+                            <span class="testimonials__pos">good friend who leaves us alone</span>
+                        </div>
+
+                    </div>
+
+                    <div class="testimonials__slide">
+
+                        <h3> NEWS! </h3>
+                        <p><b>bull</b><i>finch</i> is please to announce our new editing service. Fiction only, no academic writing. We've put in our time editing papers and such, and it's awful. But good luck!</p>
+
+                        <div class="testimonials__info">
+                            <span class="testimonials__name">contect us for more information</span>
                         </div>
 
                     </div>
 
                 </div>
 
-              -->
+
 
                 <!-- end testimonials -->
 
-          <!--  </div>  end col-full -->
-        <!-- </div>  end client-testimonials -->
+          </div> <!-- end col-full -->
+        </div> <!-- end client-testimonials -->
 
-  <!--  </section> end s-clients -->
+
+        <div class="news-content__scroll">
+            <a href="#contact" class="scroll-link smoothscroll">
+                <span>more</span>
+            </a>
+        </div>
+        <div class="news-content__line"></div>
+        <div class="news__line"></div>
+
+
+      </section> <!--   end s-clients -->
 
 
     <!-- contact
@@ -711,8 +755,8 @@
 
         <div class="row section-header" data-aos="fade-up">
             <div class="col-full">
-                <h3 class="subhead">Contact Us</h3>
-                <h1 class="display-2 display-2--light">reach out with any questions, comments, or just to say hello</h1>
+                <h3 class="subhead">GET IN TOUCH</h3>
+                <h1 class="display-2 display-2--light">questions? comments? angry rants? otter puns? your really otter send them in</h1>
             </div>
         </div>
 
@@ -720,7 +764,7 @@
 
             <div class="contact-primary">
 
-                <h3 class="h6">Send Us A Message</h3>
+                <h3 class="h6">we love mail</h3>
 
                 <form name="contactForm" id="contactForm" method="post" action="" novalidate="novalidate">
                     <fieldset>
@@ -731,14 +775,18 @@
                     <div class="form-field">
                         <input name="contactEmail" type="email" id="contactEmail" placeholder="EMAIL" value="" required="" aria-required="true" class="full-width">
                     </div>
+
+<!--
                     <div class="form-field">
                         <input name="contactSubject" type="text" id="contactSubject" placeholder="SUBJECT" value="" class="full-width">
                     </div>
+-->
                     <div class="form-field">
                         <textarea name="contactMessage" id="contactMessage" placeholder="MESSAGE" rows="10" cols="50" required="" aria-required="true" class="full-width"></textarea>
                     </div>
                     <div class="form-field">
-                        <button class="full-width btn--primary">Submit</button>
+                        <button class="full-width btn--primary">submit</button>
+                        <button class="full-width btn--primary">join the bellowing</button>
                         <div class="submit-loader">
                             <div class="text-loader">Sending...</div>
                             <div class="s-loader">
@@ -779,7 +827,7 @@
                     </div>
 
                     <div class="cinfo">
-                        <h5>EMAIL US (preferred)</h5>
+                        <h5>WE LIKE EMAIL BEST</h5>
                         <p>
                             hello@bullfinchbooks.com<br>
                             submissions@bullfinchbooks.com
@@ -789,26 +837,19 @@
                     <div class="cinfo">
                         <h5>CALL US (but oh god please don't)</h5>
                         <p>
-                            Phone: (+1) 650-199-2665<br>
-                            Mobile: (+1) 650-199-2665
+                            Phone: (+1) 650-199-2665 <br>
                         </p>
                     </div>
 
                     <ul class="contact-social">
                         <li>
-                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a>
                         </li>
                     </ul> <!-- end contact-social -->
 
@@ -828,11 +869,17 @@
 
             <div class="col-six tab-full left footer-desc">
 
-                <div class="footer-logo"></div>
+                <!--<div class="footer-logo"></div>-->
+
+                <div>
+                    <a class="site-logo headerLink" href="index.html">
+                      <b>bull</b><i>finch</i>
+                    </a>
+                </div>
 
 
-                thanks for visiting bullfinchbooks.com.  dont forget to sign up for the mailing list, or contact us with any questions about submitting, interning, or purchasing any books!
-                our online store will is currently being built and will be up and running soon.  check back later!
+
+                    we're building&#8212;check back soon!
 
             </div>
 
