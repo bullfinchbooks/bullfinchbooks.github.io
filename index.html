@@ -82,7 +82,8 @@
     }
 
     .contactFlex {
-      display: flex;
+      display:flex;
+      justify-content: space-around;
       flex-wrap: wrap;
     }
 
@@ -789,9 +790,11 @@
                     <div class="form-field">
                         <textarea name="contactMessage" id="contactMessage" placeholder="MESSAGE" rows="10" cols="50" required="" aria-required="true" class="full-width"></textarea>
                     </div>
-                    <div class="form-field contactFlex">
-                        <button class="full-width btn--primary">submit</button>
-                        <button class="full-width btn--primary">join the bellowing</button>
+                    <div class="form-field">
+                        <div class="contactFlex">
+                          <div><button class="full-width btn--primary">submit</button></div>
+                          <div><button class="full-width btn--primary">join the bellowing</button></div>
+                        </div>
                         <div class="submit-loader">
                             <div class="text-loader">Sending...</div>
                             <div class="s-loader">
